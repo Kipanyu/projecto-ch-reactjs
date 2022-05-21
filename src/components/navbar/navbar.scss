@@ -1,0 +1,45 @@
+.header {
+    background-color: rgb(155, 82, 173);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px auto;
+
+        
+    
+
+    .header__logo {
+        color: antiquewhite;
+        
+        
+    }
+
+    .header__navbar {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+
+        .header__navlink {
+            color: aquamarine;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .header__logo {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    }
+}
