@@ -1,0 +1,13 @@
+.ItemListContainer {
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: center;}
+
+    @media screen and (max-width: 768px) {
+        .ItemListContainer {
+          margin: auto;
+          width: 50%;
+          padding: 10px;
+          text-align: center;
+        }
+      }
