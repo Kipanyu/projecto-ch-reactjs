@@ -1,0 +1,20 @@
+//sobreescribir variables
+
+// $primary: blue;
+// $secondary: green;
+// $dark: #300;
+// $light: #fdd;
+// $success: #0fa;
+// $warning: yellow; 
+// $danger: red;
+
+$primary: #FAF9F9;
+$secondary: #A49C56;
+$dark: #322A47;
+$light: #938DAF;
+$success: #0fa;
+$warning: yellow; 
+$danger: red;
+
+//import de estilos de bootstrap siempre va al final
+@import "~bootstrap/scss/bootstrap.scss"

@@ -1,5 +1,6 @@
-import './styles.css';
-import { NavBar } from './components/navbar/NavBar.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './custom.scss';
+import { Barra } from './components/navbar/NavBar.js';
 import { Nosotros } from './components/nosotros/Nosotros.js';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.js'
 
@@ -15,8 +16,8 @@ function App() {
 
   return (
     <div >
-        <NavBar/>
-        <Nosotros titulo="hola mundo" content="probando props"/>
+        <Barra/>
+        
         <ItemListContainer nombre={usuario.nombre}/>
         <Pie/>
     </div>

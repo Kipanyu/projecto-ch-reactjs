@@ -1,21 +1,55 @@
-import './navbar.scss'
+import {Navbar} from 'react-bootstrap'
+import {Nav} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import { NavDropdown } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
+import { FormControl } from 'react-bootstrap'
+
+
 import { CartWidget } from '../carrito/CartWidget'
 
-export const NavBar = () => {
+export const Barra = () => {
+//     let  mainListDiv = document.getElementById("mainListDiv")
+//     let mediaButton = document.getElementById("mediaButton")
+
+//     mediaButton.onclick = function () {
     
+    
+//     mainListDiv.classList.toggle("show_list");
+//     mediaButton.classList.toggle("active");
+    
+// };
     return (
-        <header className="header">
-            <div className='header__container'>
-                
-                <h1 className="header__logo">Proyecto ReactJs Coderhouse</h1>
-                <nav className="header__navbar">
-                <li className="header__navlink">boton 1</li>
-                <li className="header__navlink">boton 2</li>
-                <li className="header__navlink">boton 3</li>
-                <CartWidget/>
-                </nav>
-            </div>
-        </header>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+  <Navbar.Brand href="#home">Mi Ecommerce</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  
+  <Navbar.Collapse id="responsive-navbar-nav">
+      
+    <Nav className="me-auto">
+        
+      <Nav.Link href="#features">Peoductos</Nav.Link>
+      <Nav.Link href="#pricing">Categorias</Nav.Link>
+      <Nav.Link href="#cart"><CartWidget/></Nav.Link>
+    </Nav>
+    <Nav>
+    <Form className="d-flex">
+              <FormControl
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+    </Nav>
+  </Navbar.Collapse>
+
+  </Container>
+</Navbar>
+    
     )
 }
 
