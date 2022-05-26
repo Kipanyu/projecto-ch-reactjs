@@ -22,20 +22,21 @@ export const Barra = () => {
     
 // };
     return (
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky="top">
-  <Container>
+        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky="top" >
+  <Container >
   <Navbar.Brand href="#home">Mi Ecommerce</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
   
   <Navbar.Collapse id="responsive-navbar-nav">
       
-    <Nav className="me-auto">
+    <Nav className="me-auto" id="navBarCustom">
         
       <Nav.Link href="#features">Peoductos</Nav.Link>
       <Nav.Link href="#pricing">Categorias</Nav.Link>
-      <Nav.Link href="#cart"><CartWidget/></Nav.Link>
+      
     </Nav>
     <Nav>
+    <Nav.Link href="#cart" id="carrito"><CartWidget/></Nav.Link>
     <Form className="d-flex">
               <FormControl
                 type="search"
@@ -43,6 +44,7 @@ export const Barra = () => {
                 className="me-2"
                 aria-label="Search"
               />
+              
               <Button variant="outline-success">Search</Button>
             </Form>
     </Nav>

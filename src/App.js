@@ -3,7 +3,7 @@ import './custom.scss';
 import { Barra } from './components/navbar/NavBar.js';
 import { Carrusel } from './components/Carousel/Carousel.js';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.js'
-import { Counter } from './components/counter/Counter.js'
+import { ItemCount } from './components/counter/ItemCount.js'
 import { Pie } from './components/footer/Pie.js'
 
 
@@ -19,7 +19,7 @@ function App() {
         <br/>
         <Carrusel/>
         <ItemListContainer nombre={usuario.nombre}/>
-        <Counter />
+        <ItemCount />
         <Pie/>
     </div>
   );

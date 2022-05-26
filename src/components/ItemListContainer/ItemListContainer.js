@@ -1,3 +1,4 @@
+import ItemCount from '../counter/ItemCount'
 import './ItemListContainer.scss'
 
 
@@ -9,6 +10,7 @@ export const ItemListContainer = ( {nombre} ) => {
             <hr/>
 
             <p>Bienvenido! {nombre}</p>
+            
         </section>
     )
 }

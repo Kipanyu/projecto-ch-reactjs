@@ -5,10 +5,17 @@
         text-align: center !important;
         justify-content: space-around !important;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
 
     }
     
 #numeroContador {
     margin: auto;
+}
+
+#botonComprar {
+    margin: auto !important;
+    max-width: 300px !important;
+    margin: 20px auto !important;
+    width: 250px;
 }
