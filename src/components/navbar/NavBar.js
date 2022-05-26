@@ -22,7 +22,7 @@ export const Barra = () => {
     
 // };
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
   <Container>
   <Navbar.Brand href="#home">Mi Ecommerce</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
