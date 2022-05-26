@@ -34,10 +34,11 @@ export const Barra = () => {
       <Nav.Link href="#features">Peoductos</Nav.Link>
       <Nav.Link href="#pricing">Categorias</Nav.Link>
       
+      
     </Nav>
     <Nav>
-    <Nav.Link href="#cart" id="carrito"><CartWidget/></Nav.Link>
     <Form className="d-flex">
+      <Nav.Link href="#cart" id="carrito" ><CartWidget/></Nav.Link>
               <FormControl
                 type="search"
                 placeholder="Search"
