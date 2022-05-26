@@ -1,4 +1,6 @@
+import './counter.scss'
 import { useState } from "react"
+import { Badge, Card } from 'react-bootstrap'
 
 export const Counter = () => {
      
@@ -26,13 +28,12 @@ export const Counter = () => {
     <div className="container my-5">
         <h2>Counter</h2>
         <hr/>
-        <div>
-        <button className="btn btn-success" onClick={incrementar1}>+</button>
-        <p>{contador1}</p>
+        <div id="centrado">
+        <button className="btn btn-warning" onClick={restar}>-</button>
+        <Card.Body className='bg-secondary' id="numeroContador">{contador1}</Card.Body>
+        <button className="btn btn-primary" onClick={incrementar1}>+</button>
         </div>
-        <div>
-            <button className="btn btn-danger" onClick={restar}>-</button>
-        </div>
+
 
 
     </div>

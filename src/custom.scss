@@ -8,13 +8,14 @@
 // $warning: yellow; 
 // $danger: red;
 
-$primary: #FAF9F9;
-$secondary: #A49C56;
-$dark: #322A47;
-$light: #938DAF;
-$success: #0fa;
-$warning: yellow; 
-$danger: red;
+$primary: #004a4d;
+$secondary: #327868;
+$dark: #040308;
+$light:#fffdde;
+$success: #009c45;
+$warning: #e9c500; 
+$danger: #f0002d;
+$info: #059444;
 
 //import de estilos de bootstrap siempre va al final
 @import "~bootstrap/scss/bootstrap.scss"

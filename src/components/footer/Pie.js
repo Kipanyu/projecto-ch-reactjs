@@ -4,7 +4,7 @@ import './footer.scss'
 export const Pie = () => {
     
     return (
-        <footer>223</footer>
+        <footer className='bg-primary'>223</footer>
     )
 }
 
