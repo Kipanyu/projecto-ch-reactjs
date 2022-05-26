@@ -17,5 +17,10 @@ $warning: #e9c500;
 $danger: #f0002d;
 $info: #059444;
 
+
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 //import de estilos de bootstrap siempre va al final
 @import "~bootstrap/scss/bootstrap.scss"

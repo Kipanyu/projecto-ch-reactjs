@@ -1,4 +1,4 @@
-import ItemCount from '../counter/ItemCount'
+// import ItemCount from '../counter/ItemCount'
 import './ItemListContainer.scss'
 
 
