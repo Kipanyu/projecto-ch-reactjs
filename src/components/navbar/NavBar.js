@@ -1,10 +1,11 @@
 import {Navbar} from 'react-bootstrap'
 import {Nav} from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
-import { NavDropdown } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 import { FormControl } from 'react-bootstrap'
+import './navbar.scss'
+
 
 
 import { CartWidget } from '../carrito/CartWidget'
@@ -21,10 +22,10 @@ export const Barra = () => {
     
 // };
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
   <Container>
   <Navbar.Brand href="#home">Mi Ecommerce</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
   
   <Navbar.Collapse id="responsive-navbar-nav">
       
