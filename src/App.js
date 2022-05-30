@@ -17,7 +17,6 @@ function App() {
     <div >
         <Barra/>
         <br/>
-        <Carrusel/>
         <ItemListContainer nombre={usuario.nombre}/>
         <ItemCount />
         <Pie/>

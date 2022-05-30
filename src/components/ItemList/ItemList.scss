@@ -1,0 +1,26 @@
+#seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#tarjetaProducto {
+    margin: 1rem;
+    text-align: center;
+}
+
+
+// #seccion {
+//     display: flex;
+//         margin: 20px auto !important;
+//         text-align: center !important;
+//         justify-content: space-around !important;
+//         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//         color: rgb(255, 255, 255);
+//         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+//         justify-content: space-between;
+
+//     }
