@@ -1,6 +1,7 @@
 
-import { Card, Col, Row, Container } from "react-bootstrap"
+import { Card, Button, Row, Container } from "react-bootstrap"
 import ItemCount from "../counter/ItemCount"
+import { ViewDetail } from "./VerDetalle"
 
 
 
@@ -25,7 +26,7 @@ export const Item = ({item}) => {
                 <Card.Text>{item.desc}</Card.Text>
                 <Card.Text>Stock: {item.stock}</Card.Text>
                 <Card.Text>{item.precio}</Card.Text>
-                <ItemCount/>
+                <ViewDetail/>
                 
             </Card.Body>
         </Card>

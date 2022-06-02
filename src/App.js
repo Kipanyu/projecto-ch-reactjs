@@ -5,6 +5,8 @@ import { Carrusel } from './components/Carousel/Carousel.js';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.js'
 import { ItemCount } from './components/counter/ItemCount.js'
 import { Pie } from './components/footer/Pie.js'
+import { Container, Row, Col } from 'react-bootstrap';
+import {Sidebar} from './components/sidebar/sidebar';
 
 
 function App() {
@@ -17,7 +19,11 @@ function App() {
     <div >
         <Barra/>
         <br/>
-        <ItemListContainer nombre={usuario.nombre}/>
+        <Container><Row>
+    <Col sm={3}><Sidebar/></Col>
+    <Col sm={9}><ItemListContainer nombre={usuario.nombre}/></Col>
+  </Row></Container>
+        
         <ItemCount />
         <Pie/>
     </div>
