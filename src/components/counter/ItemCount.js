@@ -13,7 +13,7 @@ export const ItemCount = () => {
     
     let [contador, setContador] = useState(1)
 
-
+    
 
     
     // const productos =  {
@@ -74,7 +74,6 @@ export const ItemCount = () => {
         console.log("contador actualizado")
     
         },[contador])
-
 
 
 

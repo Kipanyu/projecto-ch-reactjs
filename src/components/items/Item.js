@@ -20,7 +20,7 @@ export const Item = ({item}) => {
     return (
     <div>
         <Card id="tarjetaProducto" style={{width: '18rem'}}>
-            <Card.Img variant="top" src="{item.img}"/>
+            <Card.Img variant="top" id="foto_producto" src={item.img}/>
             <Card.Body className="img-fluid">
                 <Card.Title>{item.nombre}</Card.Title>
                 <Card.Text>{item.desc}</Card.Text>
