@@ -1,35 +1,36 @@
 import React from 'react'
 import './footer.scss'
+import { FaTwitterSquare, FaFacebookMessenger, FaInstagram, FaFacebook } from 'react-icons/fa' 
+import {MdEmail} from 'react-icons/md'
 
 
 export const Pie = () => {
     
     return (
-        <footer bgColor='light' className='text-center text-lg-start text-muted'>
+        <footer className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
               <span>Seguinos en:</span>
             </div>
     
             <div>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-facebook-f'></i>
-              </button>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-twitter'></i>
-              </button>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-google'></i>
-              </button>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-instagram'></i>
-              </button>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-linkedin'></i>
-              </button>
-              <button className='me-4 text-reset'>
-                <i className='fab fa-github'></i>
-              </button>
+              <a href='/contacto' className='me-4 text-reset'>
+              <FaTwitterSquare/>
+              </a>
+              
+             
+              <a href='#s' className='me-4 text-reset'>
+              <FaFacebookMessenger/>
+              </a>
+              <a href='#s' className='me-4 text-reset'>
+              <FaInstagram/>
+              </a>
+              <a href='#s' className='me-4 text-reset'>
+                <MdEmail/>
+              </a>
+              <a href='#s' className='me-4 text-reset'>
+                <FaFacebook/>
+              </a>
             </div>
           </section>
     

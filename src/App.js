@@ -23,7 +23,7 @@ function App() {
       <br/>
       <Routes>
         <Route path='/' element={ <ItemListContainer nombre={usuario.nombre}/>} />
-        <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/Contacto' element={<Contacto/>}/>
         <Route path='/ItemListContainer' element={<ItemListContainer/>}/>
       </Routes>
      
