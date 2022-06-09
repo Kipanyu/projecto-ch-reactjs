@@ -4,7 +4,7 @@ export const productos = [
         nombre: "CP-1X",
         desc: "compressor",
         precio: 1200,
-        img: './imgs/cp-1x_tn.jpg',
+        img: '/imgs/cp-1x_tn.jpg',
         stock: 3,
         tipo: "compresor"
     },
@@ -14,7 +14,7 @@ export const productos = [
         nombre: "DD-3t",
         desc: "delay",
         precio: 2200,
-        img: './imgs/dd-3t_tn.jpg',
+        img: '/imgs/dd-3t_tn.jpg',
         stock: 6,
     },
 
@@ -23,7 +23,7 @@ export const productos = [
         nombre: "Fz-1W",
         desc: "fuzz",
         precio: 3200,
-        img: './imgs/fz-1w_tn.jpg',
+        img: '/imgs/fz-1w_tn.jpg',
         stock: 9,
     },
 
@@ -32,7 +32,7 @@ export const productos = [
         nombre: "TE-2",
         desc: "reverb",
         precio: 1200,
-        img: './imgs/te-2_top_tn.jpg',
+        img: '/imgs/te-2_top_tn.jpg',
         stock: 3,
     },
     {
@@ -40,7 +40,7 @@ export const productos = [
         nombre: "OC-5",
         desc: "octaver",
         precio: 1200,
-        img: './imgs/oc-5_tn.jpg',
+        img: '/imgs/oc-5_tn.jpg',
         stock: 8,
     },
     {
@@ -48,7 +48,7 @@ export const productos = [
         nombre: "SD-1W",
         desc: "distortion",
         precio: 2400,
-        img: './imgs/sd-1w_top_tn.jpg',
+        img: '/imgs/sd-1w_top_tn.jpg',
         stock: 5,
     },
     
