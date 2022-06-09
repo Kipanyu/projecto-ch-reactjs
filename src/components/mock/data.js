@@ -5,7 +5,7 @@ export const productos = [
         desc: "compressor",
         precio: 1200,
         img: './imgs/cp-1x_tn.jpg',
-        stock: 5,
+        stock: 3,
         tipo: "compresor"
     },
 
@@ -24,7 +24,7 @@ export const productos = [
         desc: "fuzz",
         precio: 3200,
         img: './imgs/fz-1w_tn.jpg',
-        stock: 7,
+        stock: 9,
     },
 
     {
@@ -33,7 +33,7 @@ export const productos = [
         desc: "reverb",
         precio: 1200,
         img: './imgs/te-2_top_tn.jpg',
-        stock: 14,
+        stock: 3,
     },
     {
         id: 5,
@@ -41,7 +41,7 @@ export const productos = [
         desc: "octaver",
         precio: 1200,
         img: './imgs/oc-5_tn.jpg',
-        stock: 5,
+        stock: 8,
     },
     {
         id: 6,

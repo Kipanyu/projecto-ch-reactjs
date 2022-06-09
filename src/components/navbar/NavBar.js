@@ -1,9 +1,10 @@
 import React from 'react'
-import {NavDropdown, Navbar, Offcanvas, Form, Button, FormControl} from 'react-bootstrap'
+import {NavDropdown, Navbar, Offcanvas, Form, Button, FormControl, CloseButton} from 'react-bootstrap'
 import {Nav} from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
 import { CartWidget } from '../carrito/CartWidget'
 import './navbar.scss'
+
 
 
 
@@ -23,7 +24,7 @@ export const Barra = () => {
     return (
       <><Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id="gradiente">
         <Container>
-          <Navbar.Brand href="#home">StompStore</Navbar.Brand>
+          <Navbar.Brand href="/">StompStore</Navbar.Brand>
           <CartWidget id="carrito" />
           
         </Container>
@@ -40,15 +41,16 @@ export const Barra = () => {
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="start" 
         >
-          <Offcanvas.Header  closeButton>
+          <Offcanvas.Header variant='dark' className='link-light'   closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
               Stompstore
-            </Offcanvas.Title>
+            <CartWidget id="carrito" />
+            </Offcanvas.Title >
+            <CloseButton variant='white'/>
           </Offcanvas.Header>
           <Offcanvas.Body >
             <Nav className="justify-content-end flex-grow-1 pe-3">
-            <CartWidget id="carrito" />
-              <Nav.Link className='link-light' href="/">Home</Nav.Link>
+              <Nav.Link className='link-light' href="/tipo/compresor">Tipo</Nav.Link>
               <Nav.Link className='link-light' href="/Contacto">Contacto</Nav.Link>
               <Nav.Link className='link-light' href="/ItemListContainer">Pedales</Nav.Link>
             
@@ -60,7 +62,7 @@ export const Barra = () => {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Buscar</Button>
+              <Button variant="light">Buscar</Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

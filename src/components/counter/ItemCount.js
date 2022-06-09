@@ -2,17 +2,14 @@ import React from 'react'
 import './counter.scss'
 import { useEffect, useState } from "react"
 import { Button, Card, Container } from 'react-bootstrap'
-import { productos } from "../mock/data"
+
 
 
 export const INIT_VALUE_CART  = 0;
 
-export const ItemCount = () => {
+export const ItemCount = ( {max, setContador, contador, agregarAlCarrito  } ) => {
 
-     let stock = productos.stock
-     
-    
-    let [contador, setContador] = useState(1)
+
 
     
 
@@ -36,21 +33,21 @@ export const ItemCount = () => {
     // }
 
     const incrementar = () => {
-         if (contador === 6)
+         if (contador === max)
          return;
         setContador( contador + 1 ) 
     }
 
     const restar = () => {
-        if(contador <= 0){
+        if(contador <= 1){
             return;  
           }
         setContador( contador - 1)
     }
 
-    const agregarAlCarrito = () => {
-        console.log(contador)
-    }
+    // const agregarAlCarrito = () => {
+    //     console.log(contador)
+    // }
 
     const restartCart = () => {
         setContador (contador === 0)

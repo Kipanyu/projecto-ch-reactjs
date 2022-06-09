@@ -3,6 +3,7 @@ import React from 'react'
 import { Card, Button, Row, Container } from "react-bootstrap"
 import ItemCount from "../counter/ItemCount"
 import { ViewDetail } from "./VerDetalle"
+import { Link } from "react-router-dom"
 
 
 
@@ -27,7 +28,9 @@ export const Item = ({item}) => {
                 <Card.Text>{item.desc}</Card.Text>
                 <Card.Text>Stock: {item.stock}</Card.Text>
                 <Card.Text>{item.precio}</Card.Text>
-                <ViewDetail/>
+                <Link to={`/item/${item.id}`}>
+                <button className="btn btn-dark my-2">Ver detalle</button>
+            </Link>
                 
             </Card.Body>
         </Card>

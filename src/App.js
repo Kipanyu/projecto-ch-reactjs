@@ -10,6 +10,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import {Sidebar} from './components/sidebar/sidebar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Contacto from './components/Contacto/Contacto';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
       <br/>
       <Routes>
         <Route path='/' element={ <ItemListContainer nombre={usuario.nombre}/>} />
+        <Route path='/tipo/:categoryId' element={<ItemListContainer/>} />
+        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
         <Route path='/Contacto' element={<Contacto/>}/>
         <Route path='/ItemListContainer' element={<ItemListContainer/>}/>
       </Routes>
