@@ -1,4 +1,5 @@
 
+import React from 'react'
 import { Card, Button, Row, Container } from "react-bootstrap"
 import ItemCount from "../counter/ItemCount"
 import { ViewDetail } from "./VerDetalle"

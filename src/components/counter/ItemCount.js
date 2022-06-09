@@ -1,3 +1,4 @@
+import React from 'react'
 import './counter.scss'
 import { useEffect, useState } from "react"
 import { Button, Card, Container } from 'react-bootstrap'
