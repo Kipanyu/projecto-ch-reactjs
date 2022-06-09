@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import ItemCount from "../counter/ItemCount"
 import { Link } from "react-router-dom"
 import { Button } from "react-bootstrap"
+import Item from "../items/Item"
 
 const ItemDetail = ({item}) => {
     const [cantidad, setCantidad] = useState(1)

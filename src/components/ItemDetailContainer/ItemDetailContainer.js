@@ -14,8 +14,9 @@ export const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
     const {itemId} = useParams()
+       
         console.log(itemId)
-        console.log(itemId)
+        console.log(item)
 
         useEffect(() => {
             setLoading(true)
@@ -30,7 +31,7 @@ export const ItemDetailContainer = () => {
                 .finally(() => {
                     setLoading(false)
                 })
-        }, [])
+        }, [itemId])
         return (
             <section className="container my-5">
                 
