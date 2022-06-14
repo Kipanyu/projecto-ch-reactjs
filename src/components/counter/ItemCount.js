@@ -1,110 +1,27 @@
-import React from 'react'
-import './counter.scss'
-import { useEffect, useState } from "react"
-import { Button, Card, Container } from 'react-bootstrap'
+import { useState } from "react"
 
 
+const ItemCounter = ( {max, setCounter, counter, handleAgregar} ) => {
 
-export const INIT_VALUE_CART  = 0;
-
-export const ItemCount = ( {max, setContador, contador, agregarAlCarrito  } ) => {
-
-
-
-    
-
-    
-    // const productos =  {
-    //     nombre: "computadora",
-    //     stock: 5,
-
-    // }
-
-    
-    
-    // const contadorMenosUno = () => {
-    //     setContador1 (contador1 < 0)
-        
-    // }
-
-    // const incrementar2 = () => {
-    //     setContador2( contador2 + 1 )
-
-    // }
-
-    const incrementar = () => {
-         if (contador === max)
-         return;
-        setContador( contador + 1 ) 
+    const handleSumar = () => {
+        counter < max && setCounter(counter + 1)
     }
 
-    const restar = () => {
-        if(contador <= 1){
-            return;  
-          }
-        setContador( contador - 1)
+    const handleRestar = () => {
+        counter > 1 && setCounter(counter - 1)
     }
 
-    // const agregarAlCarrito = () => {
-    //     console.log(contador)
-    // }
 
-    const restartCart = () => {
-        setContador (contador === 0)
-    }
-    //montaje y actualizacion
-    // useEffect (() => {
+    return (
+        <div className="my-3">
+            <button onClick={handleRestar} className="btn btn-outline-primary">-</button>
+            <span className="mx-2">{counter}</span>
+            <button onClick={handleSumar} className="btn btn-primary">+</button>
+            <hr/>
 
-    //     console.log("componente montado")
-    
-    //     },[])
-
-
-    //solo cuando se monta
-    useEffect (() => {
-
-    console.log("componente montado")
-
-    },[])
-
-    useEffect (() => {
-
-        console.log("contador actualizado")
-    
-        },[contador])
-
-
-
-    return ( 
- <>
-     <Container id="contador"><Button className="btn btn-dark" onClick={restar}>-</Button><div></div>
-         <Card.Body className='border' id="numeroContador">{contador}</Card.Body>
-         
-         <Button className="btn btn-dark " onClick={incrementar}>+</Button>
-     </Container>
-     <Button variant="primary" className="btn btn-dark" id="botonComprar" onClick={agregarAlCarrito}>Agregar al Carrito</Button>
-     <Button variant="dark" className="btn btn-dark" onClick={restartCart}>Vaciar Carrito</Button>
-                    </>
-     )
+            <button onClick={handleAgregar} className="btn btn-success">Agregar al carrito</button>
+        </div>
+    )
 }
- 
-export default ItemCount
 
- // <><div className="container my-5">
-
-    //     </div><Card id="centrado" style={{ width: '18rem' }}>
-    //             <Card.Img variant="top" src="https://fakeimg.pl/640x360" className="img-fluid"/>
-    //             <Card.Body className='bg-secondary'>
-    //                 <Card.Title>Producto</Card.Title>
-    //                 <Card.Text>
-    //                     cuantas unidadses?
-    //                 </Card.Text>
-    //                 <div id="centrado">
-    //             <button className="btn btn-warning" onClick={restar}>-</button>
-    //             <Card.Body className='bg-info' id="numeroContador">{contador}</Card.Body>
-    //             <button className="btn btn-primary" onClick={incrementar}>+</button>
-    //         </div>
-    //                 <Button variant="primary" className="" id="botonComprar" onClick={agregarAlCarrito}>Agregar al Carrito</Button>
-    //                 <Button variant="warning" onClick={restartCart}>Vaciar Carrito</Button>
-    //             </Card.Body>
-    //         </Card></>
+export default ItemCounter

@@ -2,7 +2,7 @@ import React from 'react'
 import {NavDropdown, Navbar, Offcanvas, Form, Button, FormControl, CloseButton} from 'react-bootstrap'
 import {Nav} from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
-import { CartWidget } from '../carrito/CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 import './navbar.scss'
 
 
@@ -73,3 +73,4 @@ export const Barra = () => {
     )
 }
 
+export default Barra

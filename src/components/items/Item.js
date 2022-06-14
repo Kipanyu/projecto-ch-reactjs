@@ -1,9 +1,8 @@
 
 import React from 'react'
-import { Card, Button, Row, Container } from "react-bootstrap"
-import ItemCount from "../counter/ItemCount"
-import { ViewDetail } from "./VerDetalle"
+import { Card} from "react-bootstrap"
 import { Link } from "react-router-dom"
+import './verdetalle.scss'
 
 
 

@@ -1,12 +1,14 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Card } from "react-bootstrap"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+import { CartContext } from "../context/CartContext"
 import ItemCount from "../counter/ItemCount"
-import { Link } from "react-router-dom"
 import { Button } from "react-bootstrap"
-import Item from "../items/Item"
 
 const ItemDetail = ({item}) => {
+
+    const {addItem, isInCart} = useContext(CartContext)
+
     const [cantidad, setCantidad] = useState(1)
 
     const navigate = useNavigate()
@@ -20,7 +22,7 @@ const ItemDetail = ({item}) => {
             ...item,
             cantidad
         }
-        console.log(itemToCart)
+        addItem(itemToCart)
     }
 
     // return (
@@ -51,11 +53,18 @@ const ItemDetail = ({item}) => {
                 <Card.Text>Stock: {item.stock}</Card.Text>
                 <Card.Text>{item.precio}</Card.Text>
                 
-                <ItemCount
-                    max={item.stock}
-                    contador={cantidad}
-                    setContador={setCantidad}
-                    agregarAlCarrito={agregarAlCarrito}/>
+                <hr/>
+            {
+                isInCart(item.id)
+                ? <Link to="/cart" className="btn btn-success my-3">Terminar mi compra</Link>
+                :
+                    <ItemCount 
+                        max={item.stock}
+                        counter={cantidad}
+                        setCounter={setCantidad}
+                        handleAgregar={agregarAlCarrito}
+                    />
+            }
                 </Card.Body>
                 <Button onClick={handleBack} variant="light">volver</Button>
         </Card>
