@@ -1,6 +1,8 @@
 # Proyecto final de React de CoderHouse
 
 Login del Usuario, primero sin credenciales y luego con usuario registrado
+usuario: test@test.com
+pass: test
 ![Recordinglogin](https://user-images.githubusercontent.com/67608320/178599166-5c38fb38-767a-473c-b9d7-4b98fadb5f49.gif)
 
 Compra exitosa y uso de firebase
