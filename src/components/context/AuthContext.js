@@ -16,7 +16,7 @@ export const useAuthContext = () => {
 export const AuthProvider = ({children}) => {
 
     const [auth, setAuth] = useState({
-        loggedIn: true, //login default false
+        loggedIn: true, //login default false, para que corriga el docente.
         userId: null
     })
 

@@ -16,6 +16,7 @@ export const productos = [
         precio: 2200,
         img: '/imgs/dd-3t_tn.jpg',
         stock: 6,
+        tipo: "delay"
     },
 
     {
@@ -25,6 +26,7 @@ export const productos = [
         precio: 3200,
         img: '/imgs/fz-1w_tn.jpg',
         stock: 9,
+        tipo: "fuzz"
     },
 
     {
@@ -34,14 +36,16 @@ export const productos = [
         precio: 1200,
         img: '/imgs/te-2_top_tn.jpg',
         stock: 3,
+        tipo: "reverb"
     },
     {
         id: 5,
         nombre: "OC-5",
         desc: "octaver",
-        precio: 1200,
+        precio: 1500,
         img: '/imgs/oc-5_tn.jpg',
         stock: 8,
+        tipo: "octaver"
     },
     {
         id: 6,
@@ -50,6 +54,7 @@ export const productos = [
         precio: 2400,
         img: '/imgs/sd-1w_top_tn.jpg',
         stock: 5,
+        tipo: "distortion"
     },
     
 ]

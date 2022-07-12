@@ -1,6 +1,7 @@
 import React from 'react'
 import {NavDropdown, Navbar, Offcanvas, Form, Button, FormControl, CloseButton} from 'react-bootstrap'
 import {Nav} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import CartWidget from '../CartWidget/CartWidget'
 import './navbar.scss'
@@ -50,6 +51,7 @@ export const Barra = () => {
           </Offcanvas.Header>
           <Offcanvas.Body >
             <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Link to={"/tipo/delay"} className="header__navlink">comp</Link>
               <Nav.Link className='link-light' href="/tipo/compresor">Tipo</Nav.Link>
               <Nav.Link className='link-light' href="/Contacto">Contacto</Nav.Link>
               <Nav.Link className='link-light' href="/ItemListContainer">Pedales</Nav.Link>
