@@ -25,24 +25,6 @@ const ItemDetail = ({item}) => {
         addItem(itemToCart)
     }
 
-    // return (
-    //     <div className="container my-5">
-    //         <h2>{item.nombre}</h2>
-    //         <img src={item.img} alt={item.nombre}/>
-    //         <p>{item.desc}</p>
-    //         <h4>Precio: $ {item.precio}</h4>
-
-    //         <hr/>
-    //         <ItemCount
-    //         max={item.stock}
-    //         contador={cantidad}
-    //         setContador={setCantidad}
-    //         agregarAlCarrito={agregarAlCarrito}
-    //     />
-
-    //     <button onClick={handleBack}>volver</button>
-    //     </div>
-    // )
 
     return (
         <Card variant="top" id="foto_producto" style={{width: '18rem'}}>

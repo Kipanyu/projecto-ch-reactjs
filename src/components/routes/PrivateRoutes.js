@@ -1,5 +1,7 @@
 
 import Contacto from '../Contacto/Contacto'
+import Checkout from '../Checkout/Checkout'
+import Nosotros from '../nosotros/Nosotros'
 import { ItemListContainer } from '../ItemListContainer/ItemListContainer'
 import  {Pie} from '../footer/Pie';
 import {Barra} from '../navbar/NavBar';
@@ -19,6 +21,8 @@ const PrivateRoutes = () => {
                     <Route path='/categorias/:categoryId' element={ <ItemListContainer/>}/>          
                     <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
                     <Route path='/cart' element={<Cart/>} />
+                    <Route path='/checkout' element={<Checkout/>} />
+                    <Route path='/nosotros' element={ <Nosotros /> } />
                     <Route path='/contacto' element={ <Contacto /> } />
                     <Route path='*' element={ <Navigate to={"/"} /> } />
                 </Routes>

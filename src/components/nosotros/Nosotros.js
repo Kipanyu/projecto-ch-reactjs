@@ -15,3 +15,5 @@ export const Nosotros = (props) => {
     </section>
     )
 }
+
+export default Nosotros

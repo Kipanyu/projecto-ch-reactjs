@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { useCartContext } from "../../context/CartContext"
+import { useCartContext } from "../context/CartContext"
 import { Navigate } from 'react-router-dom'
 import { collection, getDocs, addDoc, writeBatch, query, where, documentId } from "firebase/firestore"
-import { db } from "../../firebase/config"
+import { db } from "../firebase/config"
 import { Formik } from "formik"
 import * as Yup from 'yup'
 
