@@ -2,6 +2,7 @@ import { useCartContext } from "../context/CartContext"
 import { BsFillTrashFill } from "react-icons/bs"
 import { Link } from "react-router-dom"
 import EmptyCart from "./EmptyCart"
+import './cart.scss'
 
 const Cart = () => {
 
@@ -11,12 +12,12 @@ const Cart = () => {
 
     return (
         <div className="container my-5">
-            <h2>Tu compra</h2>
+            <h2  id='tuCompra'>Tu compra</h2>
             <hr/>
 
             {
                 cart.map((item) => (
-                    <div key={item.id} className="my-2">
+                    <div key={item.id} className="my-2" id="compra">
                         <h5>{item.nombre}</h5>
                         <p>Cantidad: {item.cantidad}</p>
                         <h6>Precio: ${item.precio * item.cantidad}</h6>
@@ -27,9 +28,10 @@ const Cart = () => {
             }
 
             <h4>TOTAL: ${totalPrice()}</h4>
-
+            <div id="botonesCompra">
             <button onClick={emptyCart} className="btn btn-danger">Vaciar carrito</button>
-            <Link to="/checkout" className="btn btn-success mx-4">Terminar mi compra</Link>
+            <Link to="/checkout" className="btn btn-dark mx-4">Terminar mi compra</Link>
+            </div>
         </div>
     )
 }

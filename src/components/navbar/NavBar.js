@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import CartWidget from '../CartWidget/CartWidget'
 import './navbar.scss'
+import UserInfo from '../UserInfo/UserInfo'
 
 
 
@@ -53,17 +54,9 @@ export const Barra = () => {
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link className='link-light' href="/Contacto">Contacto</Nav.Link>
               <Nav.Link className='link-light' href="/ItemListContainer">Pedales</Nav.Link>
+              
             
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Buscar"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="light">Buscar</Button>
-            </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

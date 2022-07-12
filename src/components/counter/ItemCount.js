@@ -14,12 +14,12 @@ const ItemCounter = ( {max, setCounter, counter, handleAgregar} ) => {
 
     return (
         <div className="my-3">
-            <button onClick={handleRestar} className="btn btn-outline-primary">-</button>
+            <button onClick={handleRestar} className="btn btn-outline-dark">-</button>
             <span className="mx-2">{counter}</span>
-            <button onClick={handleSumar} className="btn btn-primary">+</button>
+            <button onClick={handleSumar} className="btn btn-dark">+</button>
             <hr/>
 
-            <button onClick={handleAgregar} className="btn btn-success">Agregar al carrito</button>
+            <button onClick={handleAgregar} className="btn btn-dark">Agregar al carrito</button>
         </div>
     )
 }
